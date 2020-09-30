@@ -97,7 +97,7 @@ class Contact extends Component {
 
     render() {
 
-        const errors = this.validate(this.state.firstname, this.state.lastname, this.state.telnum, this.state.email);
+        // const errors = this.validate(this.state.firstname, this.state.lastname, this.state.telnum, this.state.email);
         return (
             <div className="container">
                 <div className="row">
@@ -228,6 +228,14 @@ class Contact extends Component {
                                             validEmail: 'Invalid Email Address'
                                         }}
                                      />
+                                </Col>
+                            </Row>
+                            <Row className="form-group">
+                            <Col md={{size:10, offset: 2}}>
+
+                            <Button type="submit" color="primary">
+                                Send feedback
+                                </Button>
                                 </Col>
                             </Row>
                         </LocalForm>
