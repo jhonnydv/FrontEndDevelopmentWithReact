@@ -131,6 +131,7 @@ function RenderComments({comments, addComment, dishId}) {
                     })}
                 </ul>
                 <CommentForm dishId={dishId} addComment={addComment} />
+            
             </div>);
     } else {
         return(
